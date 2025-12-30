@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malik Nielsen – Voice Actor</title>
+
+  <link rel="icon" type="image/png" href="assets/images/favicon-48x48.png" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <img class="brand-logo" src="assets/images/malik-logo.png" alt="Malik Nielsen logo" />
+        <div class="brand-text">
+          <div class="brand-name">Malik Nielsen</div>
+          <div class="brand-role" data-i18n="brand.role">Voice Actor</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" data-i18n="nav.home">Home</a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">About me</a>
+        <a class="nav-link" href="#voice" data-i18n="nav.voice">My voice</a>
+        <a class="nav-link" href="#equipment" data-i18n="nav.equipment">Equipment</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact me</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-toggle" aria-label="Language selector">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="dk">DA</button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="hero-kicker" data-i18n="hero.kicker">Danish / English voice actor</p>
+
+          <h1 class="hero-title" data-i18n="hero.title">
+            Voice acting for games, animation, and other creative projects.
+          </h1>
+
+          <!-- DEMOS AT THE TOP -->
+          <div class="demo-block">
+            <div class="demo-block-title" data-i18n="demos.title">Demos</div>
+
+            <!-- One shared hidden player controlled by JS -->
+            <audio id="demoPlayer" preload="none"></audio>
+
+            <div class="demo-bars" role="list">
+              <button class="demo-bar" role="listitem" type="button"
+                data-audio="assets/audio/character_demo_en.mp3"
+                data-title-key="demos.character"
+              >
+                <span class="demo-icon" aria-hidden="true">▶</span>
+                <span class="demo-text" data-i18n="demos.character">Character – Demo</span>
+              </button>
+
+              <button class="demo-bar" role="listitem" type="button"
+                data-audio="assets/audio/commercial_demo_en.mp3"
+                data-title-key="demos.commercial"
+              >
+                <span class="demo-icon" aria-hidden="true">▶</span>
+                <span class="demo-text" data-i18n="demos.commercial">Commercial – Demo</span>
+              </button>
+
+              <button class="demo-bar" role="listitem" type="button"
+                data-audio="assets/audio/videogame_demo_en.mp3"
+                data-title-key="demos.videogame"
+              >
+                <span class="demo-icon" aria-hidden="true">▶</span>
+                <span class="demo-text" data-i18n="demos.videogame">Video Game – Demo</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Buttons moved UNDER demos -->
+          <div class="hero-cta hero-cta-under">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Get in touch</a>
+            <a class="btn btn-secondary" href="#voice" data-i18n="hero.cta2">Other projects</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img
+            class="hero-image"
+            src="assets/images/malik-hero.png"
+            alt="Illustration of Malik Nielsen"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title" data-i18n="about.title">About me</h2>
+
+          <p class="muted" data-i18n="about.p1">
+            I’m Malik Nielsen, a voice actor working in both English and Danish. I’ve spent years building experience through character work, fandubs, and creative voice projects.
+          </p>
+
+          <p class="muted" data-i18n="about.p2">
+            My main focus is character performance — emotional, grounded, or comedic — with clean, consistent audio. I like working on projects where the voice helps tell the story, not just read lines.
+          </p>
+
+          <p class="muted" data-i18n="about.p3">
+            If you want a voice that feels natural, clear, and committed to the scene, I’d love to hear about your project.
+          </p>
+
+          <ul class="bullet-list">
+            <li data-i18n="about.b1">English & Danish voice work</li>
+            <li data-i18n="about.b2">Character acting (serious + comedic)</li>
+            <li data-i18n="about.b3">Clean recording + careful editing</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <div class="side-card-label" data-i18n="about.cardTitle">Services Offered</div>
+          <ul class="side-card-list">
+            <li data-i18n="about.s1">Video games</li>
+            <li data-i18n="about.s2">Animation</li>
+            <li data-i18n="about.s3">Dubbing</li>
+            <li data-i18n="about.s4">Audiobook</li>
+            <li data-i18n="about.s5">Commercials</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY VOICE (EXTRA CONTENT / FANDUBS) -->
+    <section id="voice" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="more.title">My voice</h2>
+        <p class="muted section-sub" data-i18n="more.subtitle">
+          Here you’ll find extra clips, fandubs, and other projects.
+        </p>
+
+        <div class="grid-3">
+          <article class="content-card">
+            <h3 data-i18n="more.card1.title">Fandubs</h3>
+            <p class="muted" data-i18n="more.card1.text">
+              Scene re-dubs and character reinterpretations.
+            </p>
+            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="more.card2.title">Short clips</h3>
+            <p class="muted" data-i18n="more.card2.text">
+              Quick 15–60 second voice moments.
+            </p>
+            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="more.card3.title">Covers</h3>
+            <p class="muted" data-i18n="more.card3.text">
+              Character song covers and dramatic performance pieces.
+            </p>
+            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPMENT (WITH IMAGES) -->
+    <section id="equipment" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="equip.title">Equipment</h2>
+        <p class="muted section-sub" data-i18n="equip.subtitle">
+          I use a reliable setup for clean, consistent recordings. (These images are placeholders — you can replace them with your Canva visuals.)
+        </p>
+
+        <div class="grid-3">
+          <article class="equip-card">
+            <div class="equip-img">
+              <img src="assets/images/equip-mic.png" alt="Microphone image" />
+            </div>
+            <div class="equip-meta">
+              <div class="equip-label" data-i18n="equip.mic.label">Microphone</div>
+              <div class="equip-value" data-i18n="equip.mic.value">AKG Pro Audio C214</div>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <div class="equip-img">
+              <img src="assets/images/equip-interface.png" alt="Audio interface image" />
+            </div>
+            <div class="equip-meta">
+              <div class="equip-label" data-i18n="equip.iface.label">Interface</div>
+              <div class="equip-value" data-i18n="equip.iface.value">Focusrite Scarlett Solo (4th Gen)</div>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <div class="equip-img">
+              <img src="assets/images/equip-daw.png" alt="DAW image" />
+            </div>
+            <div class="equip-meta">
+              <div class="equip-label" data-i18n="equip.daw.label">Digital Audio Workspace</div>
+              <div class="equip-value" data-i18n="equip.daw.value">Audacity / REAPER</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title" data-i18n="contact.title">Contact me</h2>
+          <p class="muted" data-i18n="contact.subtitle">
+            If you want to book me, collaborate, or just ask a question — feel free to reach out.
+          </p>
+
+          <p class="contact-line">
+            <strong data-i18n="contact.emailLabel">Email:</strong>
+            <a
+              id="contactEmailLink"
+              class="contact-email"
+              href="mailto:contact@maliknielsen.dk"
+              data-i18n="contact.emailValue"
+              data-i18n-href="contact.emailHref"
+            >contact@maliknielsen.dk</a>
+          </p>
+
+          <div class="socials">
+            <div class="socials-label" data-i18n="contact.socials">Socials</div>
+
+            <!-- Replace # with your real URLs -->
+            <div class="social-links">
+              <a href="#" target="_blank" rel="noopener" aria-label="https://www.youtube.com/@MalikNielsenDK">YouTube</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Twitter / X">X</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="SoundCloud">SoundCloud</a>
+              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="mailto:contact@maliknielsen.dk"
+            method="POST"
+            enctype="text/plain"
+            data-i18n-href-action="contact.formAction"
+          >
+            <label class="field">
+              <span data-i18n="contact.form.name">Name</span>
+              <input type="text" name="name" required
+                placeholder="Your name"
+                data-i18n-placeholder="contact.form.namePh"
+              />
+            </label>
+
+            <label class="field">
+              <span data-i18n="contact.form.email">Email</span>
+              <input type="email" name="email" required
+                placeholder="your@email.com"
+                data-i18n-placeholder="contact.form.emailPh"
+              />
+            </label>
+
+            <label class="field">
+              <span data-i18n="contact.form.msg">Message</span>
+              <textarea name="message" rows="5" required
+                placeholder="Tell me about your project..."
+                data-i18n-placeholder="contact.form.msgPh"
+              ></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit" data-i18n="contact.form.send">Send</button>
+
+            <p class="form-note muted" data-i18n="contact.form.note">
+              This form opens your email app.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
