@@ -151,7 +151,6 @@ const translations = {
     "more.filter.all": "Alle",
 "more.filter.fandubs": "Fandubs",
 "more.filter.covers": "Covers",
-"more.empty": "Flere klip kommer snart.",
 
 
     "footer": "© 2025 Malik Nielsen"
@@ -185,6 +184,7 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
 
 
