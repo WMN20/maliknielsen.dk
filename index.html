@@ -87,7 +87,7 @@
                 <span class="demo-text" data-i18n="demos.videogame">Video Game – Demo</span>
               </button>
 
-              <!-- NEW: Danish demo shown in BOTH languages -->
+              <!-- Danish demo shown in BOTH languages -->
               <button class="demo-bar" role="listitem" type="button"
                 data-audio="assets/audio/danish_demo_da.mp3"
                 data-title-key="demos.danish"
@@ -98,7 +98,7 @@
             </div>
           </div>
 
-          <!-- Buttons moved UNDER demos -->
+          <!-- Buttons under demos -->
           <div class="hero-cta hero-cta-under">
             <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Get in touch</a>
             <a class="btn btn-secondary" href="#voice" data-i18n="hero.cta2">Other projects</a>
@@ -151,7 +151,7 @@
       </div>
     </section>
 
-    <!-- MY VOICE (EXTRA CONTENT / FANDUBS) -->
+    <!-- MY VOICE (CATALOG) -->
     <section id="voice" class="section section-alt">
       <div class="container">
         <h2 class="section-title" data-i18n="more.title">My voice</h2>
@@ -159,30 +159,19 @@
           Here you’ll find extra clips, fandubs, and other projects.
         </p>
 
-        <div class="grid-3">
-          <article class="content-card">
-            <h3 data-i18n="more.card1.title">Fandubs</h3>
-            <p class="muted" data-i18n="more.card1.text">
-              Scene re-dubs and character reinterpretations.
-            </p>
-            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
-          </article>
+        <!-- Filters -->
+        <div class="voice-filters" role="tablist" aria-label="Voice catalog filters">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="more.filter.all">All</button>
+          <button type="button" class="filter-btn" data-filter="fandub" data-i18n="more.filter.fandubs">Fandubs</button>
+          <button type="button" class="filter-btn" data-filter="cover" data-i18n="more.filter.covers">Covers</button>
+        </div>
 
-          <article class="content-card">
-            <h3 data-i18n="more.card2.title">Short clips</h3>
-            <p class="muted" data-i18n="more.card2.text">
-              Quick 15–60 second voice moments.
-            </p>
-            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
-          </article>
+        <!-- JS renders cards here -->
+        <div id="voiceGrid" class="voice-grid" aria-live="polite"></div>
 
-          <article class="content-card">
-            <h3 data-i18n="more.card3.title">Covers</h3>
-            <p class="muted" data-i18n="more.card3.text">
-              Character song covers and dramatic performance pieces.
-            </p>
-            <div class="tag" data-i18n="more.comingSoon">Coming soon</div>
-          </article>
+        <!-- Empty state (shown if you remove all items) -->
+        <div id="voiceEmpty" class="muted voice-empty" style="display:none;" data-i18n="more.empty">
+          More clips coming soon.
         </div>
       </div>
     </section>
@@ -192,6 +181,7 @@
       <div class="container">
         <h2 class="section-title" data-i18n="equip.title">Equipment</h2>
         <p class="muted section-sub" data-i18n="equip.subtitle">
+          I use a reliable setup for clean, consistent recordings.
         </p>
 
         <div class="grid-3">
@@ -261,13 +251,8 @@
           </div>
         </div>
 
-
-
-
-
-            </p>
-          </form>
-        </div>
+        <!-- Right column intentionally empty (form removed) -->
+        <div></div>
       </div>
     </section>
   </main>
@@ -276,8 +261,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
