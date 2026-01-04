@@ -18,7 +18,7 @@ const translations = {
     "demos.character": "Character – Demo",
     "demos.commercial": "Commercial – Demo",
     "demos.videogame": "Video Game – Demo",
-    "demos.danish": "Danish – Demo (in Danish)",
+    "demos.danish": "Danish – Demo",
 
     "about.title": "About me",
     "about.p1": "My name is Malik Nielsen, and I work as a voice actor in both English and Danish. I provide voices for a range of characters and other types of projects.",
@@ -171,4 +171,5 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
