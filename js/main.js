@@ -8,26 +8,49 @@ document.addEventListener("DOMContentLoaded", () => {
   // TIP: title_en/title_dk can be the same if you want.
   // ============================================================
   const VOICE_CATALOG = [
-    // Example entries (replace with your real links)
-    // {
-    //   type: "fandub",
-    //   title_en: "Fandub – Example Scene",
-    //   title_dk: "Fandub – Eksempel scene",
-    //   url: "https://www.youtube.com/watch?v=VIDEO_ID"
-    // },
-    // {
-    //   type: "cover",
-    //   title_en: "Cover – Example Song",
-    //   title_dk: "Cover – Eksempel sang",
-    //   url: "https://www.youtube.com/watch?v=VIDEO_ID"
-    // }
+    // -------------------------
+    // FANDUBS
+    // -------------------------
+    {
+      type: "fandub",
+      title_en: "Undertale Dub – Omega Flowey Boss Fight",
+      title_dk: "Undertale Dub – Omega Flowey Boss Fight",
+      url: "https://www.youtube.com/watch?v=GRsfJYKtVrs"
+    },
+    {
+      type: "fandub",
+      title_en: "Final Fantasy XV Fandub – Ardyn Reveals His True Self",
+      title_dk: "Final Fantasy XV Fandub – Ardyn afslører sit sande jeg",
+      url: "https://www.youtube.com/watch?v=SVtQwiDIwMA"
+    },
+    {
+      type: "fandub",
+      title_en: "Batman Arkham Knight – Scarecrow Fandub",
+      title_dk: "Batman Arkham Knight – Scarecrow Fandub",
+      url: "https://www.youtube.com/watch?v=4qcWle20Aw8"
+    },
+
+    // -------------------------
+    // COVERS
+    // -------------------------
+    {
+      type: "cover",
+      title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
+      title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
+      url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+    },
+    {
+      type: "cover",
+      title_en: "Nuclear (Cover) – By Malik Nielsen",
+      title_dk: "Nuclear (Cover) – Af Malik Nielsen",
+      url: "https://www.youtube.com/watch?v=ZSsM2eSn1ws"
+    }
   ];
 
   // ------------------------
   // Helpers
   // ------------------------
   function getCurrentLang() {
-    // This matches your existing language storage
     try {
       const stored = localStorage.getItem("mn_lang");
       if (stored === "dk" || stored === "en") return stored;
@@ -48,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getYouTubeThumb(videoId) {
-    // hqdefault is reliable and fast
     return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
   }
 
@@ -56,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render "My Voice" catalog
   // ------------------------
   const voiceGrid = document.getElementById("voiceGrid");
-  const voiceEmpty = document.getElementById("voiceEmpty");
   const filterButtons = document.querySelectorAll(".filter-btn");
 
   function renderCatalog(filter) {
@@ -70,19 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     voiceGrid.innerHTML = "";
 
-    if (!items.length) {
-      if (voiceEmpty) voiceEmpty.style.display = "block";
-      return;
-    } else {
-      if (voiceEmpty) voiceEmpty.style.display = "none";
-    }
-
     items.forEach((item) => {
       const id = extractYouTubeId(item.url);
-      const title = lang === "dk" ? (item.title_dk || item.title_en || "") : (item.title_en || item.title_dk || "");
-      const typeLabel = item.type === "cover"
-        ? (lang === "dk" ? "Cover" : "Cover")
-        : (lang === "dk" ? "Fandub" : "Fandub");
+      const title =
+        lang === "dk"
+          ? (item.title_dk || item.title_en || "")
+          : (item.title_en || item.title_dk || "");
+
+      const typeLabel =
+        item.type === "cover"
+          ? (lang === "dk" ? "Cover" : "Cover")
+          : (lang === "dk" ? "Fandub" : "Fandub");
 
       const card = document.createElement("article");
       card.className = "voice-card";
@@ -93,7 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="voice-card-body">
             <div class="voice-type">${typeLabel}</div>
             <h3 class="voice-title">${title}</h3>
-            <a class="voice-link" href="${item.url}" target="_blank" rel="noopener">${lang === "dk" ? "Åbn link" : "Open link"}</a>
+            <a class="voice-link" href="${item.url}" target="_blank" rel="noopener">
+              ${lang === "dk" ? "Åbn link" : "Open link"}
+            </a>
           </div>
         `;
         voiceGrid.appendChild(card);
@@ -110,7 +131,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="voice-card-body">
           <div class="voice-type">${typeLabel}</div>
           <h3 class="voice-title">${title}</h3>
-          <a class="voice-link" href="${item.url}" target="_blank" rel="noopener">${lang === "dk" ? "Se på YouTube" : "Watch on YouTube"}</a>
+          <a class="voice-link" href="${item.url}" target="_blank" rel="noopener">
+            ${lang === "dk" ? "Se på YouTube" : "Watch on YouTube"}
+          </a>
         </div>
       `;
 
