@@ -35,20 +35,18 @@ const translations = {
 
     "more.title": "My voice",
     "more.subtitle": "Here you’ll find some of my fandubs, Covers, and other projects.",
-    "more.card1.title": "Fandubs",
-    "more.card1.text": "Scene re-dubs and character reinterpretations.",
-    "more.card2.title": "Short clips",
-    "more.card2.text": "Quick 15–60 second voice moments.",
-    "more.card3.title": "Covers",
-    "more.card3.text": "Character song covers and dramatic performance pieces.",
-    "more.comingSoon": "Coming soon",
+
+    "more.filter.all": "All",
+    "more.filter.fandubs": "Fandubs",
+    "more.filter.covers": "Covers",
 
     "equip.title": "Equipment",
+    "equip.subtitle": "I use a reliable setup for clean, consistent recordings.",
     "equip.mic.label": "Microphone",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
     "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
-    "equip.daw.label": "Digital Audio Workstation",
+    "equip.daw.label": "Digital Audio Workspace",
     "equip.daw.value": "Audacity / REAPER",
 
     "contact.title": "Contact me",
@@ -57,23 +55,6 @@ const translations = {
     "contact.emailValue": "contact@maliknielsen.dk",
     "contact.emailHref": "mailto:contact@maliknielsen.dk",
     "contact.socials": "Socials",
-
-    "contact.formAction": "mailto:contact@maliknielsen.dk",
-    "contact.form.name": "Name",
-    "contact.form.namePh": "Your name",
-    "contact.form.email": "Email",
-    "contact.form.emailPh": "your@email.com",
-    "contact.form.msg": "Message",
-    "contact.form.msgPh": "Tell me about your project...",
-    "contact.form.send": "Send",
-    "contact.form.note": "This form opens your email app.",
-
-"more.filter.all": "All",
-"more.filter.fandubs": "Fandubs",
-"more.filter.covers": "Covers",
-
-
-    
 
     "footer": "© 2025 Malik Nielsen"
   },
@@ -88,8 +69,8 @@ const translations = {
     "nav.contact": "Kontakt mig",
 
     "hero.kicker": "Dansk / engelsk stemmeskuespiller",
-    "hero.title": "Stemmeskuespil til spil, animation og andre kreative projekter.",
-    "hero.subtitle": "Stemmeskuespil til spil, animation og andre kreative projekter.",
+    "hero.title": "Stemmeskuespil til spil, animation og kreative projekter",
+    "hero.subtitle": "Stemmeskuespil til spil, animation og kreative projekter.",
     "hero.cta": "Kontakt mig",
     "hero.cta2": "Andre projekter",
 
@@ -114,20 +95,18 @@ const translations = {
 
     "more.title": "Min stemme",
     "more.subtitle": "Her finder du nogle af mine fandubs, covers og andre projekter.",
-    "more.card1.title": "Fandubs",
-    "more.card1.text": "Re-dubs af scener og karakterfortolkninger.",
-    "more.card2.title": "Korte klip",
-    "more.card2.text": "Hurtige 15–60 sekunders voice moments.",
-    "more.card3.title": "Covers",
-    "more.card3.text": "Karakter-sangcovers og dramatiske performance-klip.",
-    "more.comingSoon": "Kommer snart",
+
+    "more.filter.all": "Alle",
+    "more.filter.fandubs": "Fandubs",
+    "more.filter.covers": "Covers",
 
     "equip.title": "Udstyr",
+    "equip.subtitle": "Jeg bruger et stabilt setup til rene og ensartede optagelser.",
     "equip.mic.label": "Mikrofon",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
     "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
-    "equip.daw.label": "Digital Audio Workstation",
+    "equip.daw.label": "Digital Audio Workspace",
     "equip.daw.value": "Audacity / REAPER",
 
     "contact.title": "Kontakt mig",
@@ -136,21 +115,6 @@ const translations = {
     "contact.emailValue": "kontakt@maliknielsen.dk",
     "contact.emailHref": "mailto:kontakt@maliknielsen.dk",
     "contact.socials": "Sociale medier",
-
-    "contact.formAction": "mailto:kontakt@maliknielsen.dk",
-    "contact.form.name": "Navn",
-    "contact.form.namePh": "Dit navn",
-    "contact.form.email": "Email",
-    "contact.form.emailPh": "din@email.dk",
-    "contact.form.msg": "Besked",
-    "contact.form.msgPh": "Fortæl om dit projekt...",
-    "contact.form.send": "Send",
-    "contact.form.note": "Denne formular åbner din email-app.",
-
-    "more.filter.all": "Alle",
-"more.filter.fandubs": "Fandubs",
-"more.filter.covers": "Covers",
-
 
     "footer": "© 2025 Malik Nielsen"
   }
@@ -183,9 +147,3 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
-
-
-
-
-
-
