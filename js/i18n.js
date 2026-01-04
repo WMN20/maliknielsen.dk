@@ -44,7 +44,6 @@ const translations = {
     "more.comingSoon": "Coming soon",
 
     "equip.title": "Equipment",
-    "equip.subtitle": "I use a reliable setup for clean, consistent recordings.",
     "equip.mic.label": "Microphone",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
@@ -117,7 +116,6 @@ const translations = {
     "more.comingSoon": "Kommer snart",
 
     "equip.title": "Udstyr",
-    "equip.subtitle": "Jeg bruger et stabilt setup til rene og ensartede optagelser.",
     "equip.mic.label": "Mikrofon",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
@@ -173,3 +171,4 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
