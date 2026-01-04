@@ -565,3 +565,116 @@ a{color:inherit}
   .hero{padding-top: 64px;}
   .section{padding: 60px 0;}
 }
+
+/* My Voice catalog */
+.voice-filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin: 8px 0 18px;
+}
+
+.filter-btn{
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.25);
+  color: rgba(255,255,255,0.92);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor:pointer;
+  font: inherit;
+}
+.filter-btn:hover{
+  border-color: rgba(224,68,68,0.55);
+}
+.filter-btn.active{
+  border-color: rgba(255, 211, 122, 0.80);
+}
+
+.voice-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:16px;
+}
+
+.voice-card{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius2);
+  overflow:hidden;
+}
+
+.voice-thumb{
+  position:relative;
+  display:block;
+  background: rgba(0,0,0,0.35);
+  height: 190px;
+}
+.voice-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.voice-play{
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  width: 42px;
+  height: 42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.45);
+  color: rgba(255,255,255,0.92);
+  font-size: 1.0rem;
+}
+
+.voice-card-body{
+  padding: 14px 16px 18px;
+}
+
+.voice-type{
+  font-family:"Montserrat",system-ui,sans-serif;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.70);
+  margin-bottom: 8px;
+}
+
+.voice-title{
+  margin: 0 0 10px;
+  font-family:"Montserrat",system-ui,sans-serif;
+  font-weight:700;
+  font-size: 1.05rem;
+}
+
+.voice-link{
+  display:inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.10);
+  text-decoration:none;
+  background: rgba(0,0,0,0.25);
+}
+.voice-link:hover{
+  border-color: rgba(224,68,68,0.55);
+}
+
+.voice-empty{
+  margin-top: 12px;
+}
+
+/* Responsive for voice grid */
+@media (max-width: 980px){
+  .voice-grid{grid-template-columns: 1fr;}
+  .voice-thumb{height: 210px;}
+}
+
+
+
+
