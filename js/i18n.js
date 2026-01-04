@@ -68,6 +68,14 @@ const translations = {
     "contact.form.send": "Send",
     "contact.form.note": "This form opens your email app.",
 
+"more.filter.all": "All",
+"more.filter.fandubs": "Fandubs",
+"more.filter.covers": "Covers",
+"more.empty": "More clips coming soon.",
+
+
+    
+
     "footer": "© 2025 Malik Nielsen"
   },
 
@@ -140,6 +148,12 @@ const translations = {
     "contact.form.send": "Send",
     "contact.form.note": "Denne formular åbner din email-app.",
 
+    "more.filter.all": "Alle",
+"more.filter.fandubs": "Fandubs",
+"more.filter.covers": "Covers",
+"more.empty": "Flere klip kommer snart.",
+
+
     "footer": "© 2025 Malik Nielsen"
   }
 };
@@ -171,5 +185,6 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
 
