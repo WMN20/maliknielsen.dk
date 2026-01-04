@@ -18,6 +18,7 @@ const translations = {
     "demos.character": "Character – Demo",
     "demos.commercial": "Commercial – Demo",
     "demos.videogame": "Video Game – Demo",
+    "demos.danish": "Danish – Demo (in Danish)",
 
     "about.title": "About me",
     "about.p1": "My name is Malik Nielsen, and I work as a voice actor in both English and Danish. I provide voices for a range of characters and other types of projects.",
@@ -43,7 +44,7 @@ const translations = {
     "more.comingSoon": "Coming soon",
 
     "equip.title": "Equipment",
-    "equip.subtitle": "I use a reliable setup for clean, consistent recordings. (These images are placeholders — you can replace them with your Canva visuals.)",
+    "equip.subtitle": "I use a reliable setup for clean, consistent recordings.",
     "equip.mic.label": "Microphone",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
@@ -90,6 +91,7 @@ const translations = {
     "demos.character": "Karakter – Demo",
     "demos.commercial": "Reklame – Demo",
     "demos.videogame": "Videospil – Demo",
+    "demos.danish": "Dansk – Demo",
 
     "about.title": "Om mig",
     "about.p1": "Jeg hedder Malik Nielsen og arbejder som stemmeskuespiller på både engelsk og dansk. Jeg lægger stemme til forskellige karakterer og andre typer projekter.",
@@ -115,7 +117,7 @@ const translations = {
     "more.comingSoon": "Kommer snart",
 
     "equip.title": "Udstyr",
-    "equip.subtitle": "Jeg bruger et stabilt setup til rene og ensartede optagelser. (Billederne er placeholders — du kan udskifte dem med dine Canva visuals.)",
+    "equip.subtitle": "Jeg bruger et stabilt setup til rene og ensartede optagelser.",
     "equip.mic.label": "Mikrofon",
     "equip.mic.value": "AKG Pro Audio C214",
     "equip.iface.label": "Interface",
