@@ -114,7 +114,7 @@ const translations = {
     "about.s5": "Reklamer",
 
     "more.title": "Min stemme",
-    "more.subtitle": "Her finder du ekstra klip, fandubs og andre projekter.",
+    "more.subtitle": "Her finder du nogle af mine fandubs, covers og andre projekter.",
     "more.card1.title": "Fandubs",
     "more.card1.text": "Re-dubs af scener og karakterfortolkninger.",
     "more.card2.title": "Korte klip",
@@ -185,6 +185,7 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
 
 
