@@ -9,7 +9,7 @@ const translations = {
     "nav.contact": "Contact me",
 
     "hero.kicker": "Danish / English voice actor",
-    "hero.title": "Voice acting for games, animation, and creative projects",
+    "hero.title": "Voice acting for games, animation, and other creative projects.",
     "hero.subtitle": "Voice acting for games, animation, and other creative projects.",
     "hero.cta": "Get in touch",
     "hero.cta2": "Other projects",
@@ -20,12 +20,10 @@ const translations = {
     "demos.videogame": "Video Game – Demo",
 
     "about.title": "About me",
-    "about.p1": "I’m Malik Nielsen, a voice actor working in both English and Danish. I’ve spent years building experience through character work, fandubs, and creative voice projects.",
-    "about.p2": "My main focus is character performance — emotional, grounded, or comedic — with clean, consistent audio. I like working on projects where the voice helps tell the story, not just read lines.",
-    "about.p3": "If you want a voice that feels natural, clear, and committed to the scene, I’d love to hear about your project.",
-    "about.b1": "English & Danish voice work",
-    "about.b2": "Character acting (serious + comedic)",
-    "about.b3": "Clean recording + careful editing",
+    "about.p1": "My name is Malik Nielsen, and I work as a voice actor in both English and Danish. I provide voices for a range of characters and other types of projects.",
+    "about.p2": "I started working with voice acting in 2022 under a different name. What began as a hobby through my own projects on YouTube and collaborations with others has since grown into something I approach more professionally.",
+    "about.p3": "I work with the types of projects listed on this site — including games, animation, dubbing, audiobooks, and commercials — and I’m also open to other kinds of work. When recording a role, I focus on following the director’s instructions and making sure the character fits the scene and project as intended.",
+    "about.p4": "If you’re looking for a voice for a project and want to work with someone who takes the job seriously, feel free to get in touch.",
 
     "about.cardTitle": "Services Offered",
     "about.s1": "Video games",
@@ -83,7 +81,7 @@ const translations = {
     "nav.contact": "Kontakt mig",
 
     "hero.kicker": "Dansk / engelsk stemmeskuespiller",
-    "hero.title": "Stemmeskuespil til spil, animation og kreative projekter",
+    "hero.title": "Stemmeskuespil til spil, animation og andre kreative projekter.",
     "hero.subtitle": "Stemmeskuespil til spil, animation og andre kreative projekter.",
     "hero.cta": "Kontakt mig",
     "hero.cta2": "Andre projekter",
@@ -94,12 +92,10 @@ const translations = {
     "demos.videogame": "Videospil – Demo",
 
     "about.title": "Om mig",
-    "about.p1": "Jeg er Malik Nielsen, en stemmeskuespiller der arbejder på både engelsk og dansk. Jeg har brugt flere år på at bygge erfaring gennem karakterarbejde, fandubs og kreative voice-projekter.",
-    "about.p2": "Mit fokus er karakterperformance — følsomt, jordnært eller komisk — med ren og stabil lyd. Jeg kan især lide projekter, hvor stemmen hjælper med at fortælle historien, ikke bare læse replikker.",
-    "about.p3": "Hvis du vil have en stemme der lyder naturlig, tydelig og committed til scenen, så skriv endelig til mig.",
-    "about.b1": "Engelsk & dansk voice work",
-    "about.b2": "Karakter-skuespil (seriøst + komisk)",
-    "about.b3": "Ren optagelse + grundig redigering",
+    "about.p1": "Jeg hedder Malik Nielsen og arbejder som stemmeskuespiller på både engelsk og dansk. Jeg lægger stemme til forskellige karakterer og andre typer projekter.",
+    "about.p2": "Jeg startede med voice acting i 2022 under et andet navn. Det begyndte som en hobby gennem egne projekter på YouTube og samarbejder med andre, og er siden blevet noget, jeg går mere professionelt til.",
+    "about.p3": "Jeg arbejder med de typer opgaver, der er nævnt her på siden — blandt andet spil, animation, dubbing, lydbøger og reklamer — men er også åben for andre projekter. Når jeg arbejder på en rolle, forsøger jeg at følge de instruktioner, jeg får fra instruktøren, og få karakteren til at fungere i den sammenhæng, den er tænkt til.",
+    "about.p4": "Hvis du leder efter en stemme til et projekt og har brug for en stemmeskuespiller, der tager arbejdet seriøst, er du velkommen til at tage kontakt.",
 
     "about.cardTitle": "Ydelser",
     "about.s1": "Videospil",
