@@ -34,7 +34,7 @@ const translations = {
     "about.s5": "Commercials",
 
     "more.title": "My voice",
-    "more.subtitle": "Here you’ll find extra clips, fandubs, and other projects.",
+    "more.subtitle": "Here you’ll find some of my fandubs, Covers, and other projects.",
     "more.card1.title": "Fandubs",
     "more.card1.text": "Scene re-dubs and character reinterpretations.",
     "more.card2.title": "Short clips",
@@ -71,7 +71,6 @@ const translations = {
 "more.filter.all": "All",
 "more.filter.fandubs": "Fandubs",
 "more.filter.covers": "Covers",
-"more.empty": "More clips coming soon.",
 
 
     
@@ -184,6 +183,7 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
 
 
