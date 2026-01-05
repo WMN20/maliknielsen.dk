@@ -56,6 +56,10 @@ const translations = {
     "contact.emailHref": "mailto:contact@maliknielsen.dk",
     "contact.socials": "Socials",
 
+    "more.toggle.more": "Show more",
+    "more.toggle.less": "Show less",
+
+
     "footer": "© 2025 Malik Nielsen"
   },
 
@@ -116,6 +120,10 @@ const translations = {
     "contact.emailHref": "mailto:kontakt@maliknielsen.dk",
     "contact.socials": "Sociale medier",
 
+    "more.toggle.more": "Vis mere",
+    "more.toggle.less": "Vis mindre",
+
+
     "footer": "© 2025 Malik Nielsen"
   }
 };
@@ -147,3 +155,4 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
