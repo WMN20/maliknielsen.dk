@@ -152,19 +152,35 @@
     </section>
 
     <!-- MY VOICE (CATALOG) -->
-    <section id="voice" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title" data-i18n="more.title">My voice</h2>
-        <p class="muted section-sub" data-i18n="more.subtitle">
-          Here you’ll find some of my fandubs, Covers, and other projects.
-        </p>
+   <section id="voice" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title" data-i18n="more.title">My voice</h2>
+    <p class="muted section-sub" data-i18n="more.subtitle">
+      Here you’ll find some of my fandubs, Covers, and other projects.
+    </p>
 
-        <!-- Filters -->
-        <div class="voice-filters" role="tablist" aria-label="Voice catalog filters">
-          <button type="button" class="filter-btn active" data-filter="all" data-i18n="more.filter.all">All</button>
-          <button type="button" class="filter-btn" data-filter="fandub" data-i18n="more.filter.fandubs">Fandubs</button>
-          <button type="button" class="filter-btn" data-filter="cover" data-i18n="more.filter.covers">Covers</button>
-        </div>
+    <!-- Filters -->
+    <div class="voice-filters" role="tablist" aria-label="Voice catalog filters">
+      <button type="button" class="filter-btn active" data-filter="all" data-i18n="more.filter.all">All</button>
+      <button type="button" class="filter-btn" data-filter="fandub" data-i18n="more.filter.fandubs">Fandubs</button>
+      <button type="button" class="filter-btn" data-filter="cover" data-i18n="more.filter.covers">Covers</button>
+    </div>
+
+    <!-- Collapsible catalog wrapper -->
+    <div id="voiceCatalog" class="voice-catalog is-collapsed">
+      <div id="voiceGrid" class="voice-grid" aria-live="polite"></div>
+
+      <!-- Fade overlay + button (only visible when collapsed and there are >3 items) -->
+      <div id="voiceFade" class="voice-fade" aria-hidden="true"></div>
+
+      <button id="voiceToggle" class="voice-toggle" type="button" aria-expanded="false">
+        <span class="voice-toggle-icon" aria-hidden="true">⌄</span>
+        <span class="voice-toggle-text" data-i18n="more.toggle.more">Show more</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 
         <!-- JS renders cards here -->
         <div id="voiceGrid" class="voice-grid" aria-live="polite"></div>
@@ -257,6 +273,7 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
 
