@@ -1,16 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ============================================================
   // EDIT THIS CATALOG (easy to find + easy to change)
-  //
-  // Add your YouTube links here. Each item becomes a card.
-  // type: "fandub" or "cover"
-  //
-  // TIP: title_en/title_dk can be the same if you want.
   // ============================================================
   const VOICE_CATALOG = [
-    // -------------------------
     // FANDUBS
-    // -------------------------
     {
       type: "fandub",
       title_en: "Undertale Dub – Omega Flowey Boss Fight",
@@ -30,9 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.youtube.com/watch?v=4qcWle20Aw8"
     },
 
-    // -------------------------
     // COVERS
-    // -------------------------
     {
       type: "cover",
       title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
@@ -59,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function extractYouTubeId(url) {
-    // Supports: youtu.be/ID, youtube.com/watch?v=ID, youtube.com/shorts/ID
     try {
       const u = new URL(url);
       if (u.hostname.includes("youtu.be")) return u.pathname.replace("/", "").trim();
@@ -75,11 +65,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ------------------------
-  // Render "My Voice" catalog
+  // "My Voice" Collapsible state
   // ------------------------
+  const voiceCatalogEl = document.getElementById("voiceCatalog");
   const voiceGrid = document.getElementById("voiceGrid");
+  const voiceFade = document.getElementById("voiceFade");
+  const voiceToggle = document.getElementById("voiceToggle");
   const filterButtons = document.querySelectorAll(".filter-btn");
 
+  let currentFilter = "all";
+  let isExpanded = false;
+
+  function setCatalogState(expanded) {
+    if (!voiceCatalogEl) return;
+    isExpanded = expanded;
+
+    voiceCatalogEl.classList.toggle("is-expanded", expanded);
+    voiceCatalogEl.classList.toggle("is-collapsed", !expanded);
+
+    if (voiceToggle) voiceToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+
+    // Update button text by triggering i18n again (if available), otherwise fallback:
+    const lang = getCurrentLang();
+    const toggleText = voiceToggle?.querySelector(".voice-toggle-text");
+    if (toggleText) {
+      // If i18n is loaded, it will override this text anyway.
+      toggleText.textContent = expanded
+        ? (lang === "dk" ? "Vis mindre" : "Show less")
+        : (lang === "dk" ? "Vis mere" : "Show more");
+    }
+  }
+
+  function updateToggleVisibility(visible) {
+    if (!voiceToggle) return;
+    if (!voiceFade) return;
+
+    if (visible) {
+      voiceToggle.hidden = false;
+      voiceFade.style.display = "";
+    } else {
+      voiceToggle.hidden = true;
+      voiceFade.style.display = "none";
+    }
+  }
+
+  // ------------------------
+  // Render "My Voice" catalog
+  // ------------------------
   function renderCatalog(filter) {
     if (!voiceGrid) return;
 
@@ -107,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = "voice-card";
 
       if (!id) {
-        // Fallback if URL is not YouTube or parsing fails
         card.innerHTML = `
           <div class="voice-card-body">
             <div class="voice-type">${typeLabel}</div>
@@ -139,18 +170,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
       voiceGrid.appendChild(card);
     });
+
+    // Show toggle only if there are more than 3 items
+    const shouldHaveToggle = items.length > 3;
+
+    updateToggleVisibility(shouldHaveToggle);
+
+    // If there are <= 3 items, force expanded (no need to cut/fade)
+    if (!shouldHaveToggle) {
+      setCatalogState(true);
+      return;
+    }
+
+    // Otherwise keep collapsed by default when filter changes
+    setCatalogState(false);
   }
 
   function setFilter(filter) {
+    currentFilter = filter;
+
     filterButtons.forEach((btn) => {
       btn.classList.toggle("active", btn.getAttribute("data-filter") === filter);
     });
+
     renderCatalog(filter);
   }
 
   if (filterButtons.length) {
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", () => setFilter(btn.getAttribute("data-filter")));
+    });
+  }
+
+  if (voiceToggle) {
+    voiceToggle.addEventListener("click", () => {
+      setCatalogState(!isExpanded);
+
+      // Also update i18n label if you add it (recommended)
+      const toggleText = voiceToggle.querySelector(".voice-toggle-text");
+      if (toggleText) {
+        const lang = getCurrentLang();
+        toggleText.textContent = isExpanded
+          ? (lang === "dk" ? "Vis mindre" : "Show less")
+          : (lang === "dk" ? "Vis mere" : "Show more");
+      }
     });
   }
 
@@ -205,7 +268,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Re-render catalog to switch titles
-    renderCatalog(document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "all");
+    renderCatalog(currentFilter);
+
+    // Update toggle label (because language changed)
+    if (voiceToggle) {
+      const toggleText = voiceToggle.querySelector(".voice-toggle-text");
+      if (toggleText) {
+        toggleText.textContent = isExpanded
+          ? (lang === "dk" ? "Vis mindre" : "Show less")
+          : (lang === "dk" ? "Vis mere" : "Show more");
+      }
+    }
   }
 
   langButtons.forEach((btn) => {
@@ -217,6 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const stored = localStorage.getItem("mn_lang");
     if (stored && translations[stored]) initialLang = stored;
   } catch (_) {}
+
   setLanguage(initialLang);
 
   // Initial render of catalog
