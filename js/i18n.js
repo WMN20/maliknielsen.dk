@@ -73,8 +73,8 @@ const translations = {
     "nav.contact": "Kontakt mig",
 
     "hero.kicker": "Dansk / engelsk stemmeskuespiller",
-    "hero.title": "Stemmeskuespil til spil, animation og kreative projekter",
-    "hero.subtitle": "Stemmeskuespil til spil, animation og kreative projekter.",
+    "hero.title": "Stemmeskuespil til spil, animationer og andre kreative projekter",
+    "hero.subtitle": "Stemmeskuespil til spil, animationer og andre kreative projekter.",
     "hero.cta": "Kontakt mig",
     "hero.cta2": "Andre projekter",
 
@@ -85,9 +85,9 @@ const translations = {
     "demos.danish": "Dansk – Demo",
 
     "about.title": "Om mig",
-    "about.p1": "Jeg hedder Malik Nielsen og arbejder som stemmeskuespiller på både engelsk og dansk. Jeg lægger stemme til forskellige karakterer og andre typer projekter.",
-    "about.p2": "Jeg startede med voice acting i 2022 under et andet navn. Det begyndte som en hobby gennem egne projekter på YouTube og samarbejder med andre, og er siden blevet noget, jeg går mere professionelt til.",
-    "about.p3": "Jeg arbejder med de typer opgaver, der er nævnt her på siden — blandt andet spil, animation, dubbing, lydbøger og reklamer — men er også åben for andre projekter. Når jeg arbejder på en rolle, forsøger jeg at følge de instruktioner, jeg får fra instruktøren, og få karakteren til at fungere i den sammenhæng, den er tænkt til.",
+    "about.p1": "Jeg hedder Malik Nielsen og arbejder som stemmeskuespiller på både dansk og engelsk. Jeg lægger stemme til forskellige karakterer samt andre typer projekter.",
+    "about.p2": "Jeg begyndte med voice acting i 2022 under et andet navn. Det startede som en hobby gennem egne projekter på YouTube og samarbejder med andre, og har siden udviklet sig til noget, jeg arbejder mere professionelt med.",
+    "about.p3": "Jeg arbejder med de typer opgaver, der er nævnt her på siden — herunder spil, animation, dubbing, lydbøger og reklamer — men er også åben for andre projekter. Når jeg arbejder med en rolle, bestræber jeg mig på at følge de instruktioner, jeg modtager fra instruktøren, og på at få karakteren til at fungere i den sammenhæng, den er tænkt til.",
     "about.p4": "Hvis du leder efter en stemme til et projekt og har brug for en stemmeskuespiller, der tager arbejdet seriøst, er du velkommen til at tage kontakt.",
 
     "about.cardTitle": "Ydelser",
@@ -155,4 +155,5 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
