@@ -31,10 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
     },
     {
-      type: "cover",
-      title_en: "Nuclear (Cover) – By Malik Nielsen",
-      title_dk: "Nuclear (Cover) – Af Malik Nielsen",
-      url: "https://www.youtube.com/watch?v=ZSsM2eSn1ws"
+
+
+//Can add more covers here:
+
+      
     }
   ];
 
@@ -361,3 +362,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
