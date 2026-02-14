@@ -30,13 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
     },
-    {
 
-
-//Can add more covers here:
-
-      
-    }
   ];
 
   // ------------------------
@@ -362,4 +356,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 
