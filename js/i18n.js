@@ -43,7 +43,7 @@ const translations = {
     "equip.title": "Equipment",
     "equip.subtitle": "I use a reliable setup for clean, consistent recordings.",
     "equip.mic.label": "Microphone",
-    "equip.mic.value": "AKG Pro Audio C214",
+    "equip.mic.value": "AKG Pro Audio C214 / Shure SM7dB",
     "equip.iface.label": "Interface",
     "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
     "equip.daw.label": "Digital Audio Workspace",
@@ -107,7 +107,7 @@ const translations = {
     "equip.title": "Udstyr",
     "equip.subtitle": "Jeg bruger et stabilt setup til rene og ensartede optagelser.",
     "equip.mic.label": "Mikrofon",
-    "equip.mic.value": "AKG Pro Audio C214",
+    "equip.mic.value": "AKG Pro Audio C214 / Shure SM7dB",
     "equip.iface.label": "Interface",
     "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
     "equip.daw.label": "Digital Audio Workspace",
@@ -155,5 +155,6 @@ function applyTranslations(lang) {
 
   document.documentElement.setAttribute("lang", lang === "dk" ? "da" : "en");
 }
+
 
 
