@@ -15,10 +15,10 @@ const translations = {
     "hero.cta2": "Other projects",
 
     "demos.title": "Demos",
-    "demos.character": "Character – Demo",
-    "demos.commercial": "Commercial – Demo",
-    "demos.videogame": "Video Game – Demo",
-    "demos.danish": "Danish – Demo",
+"demos.character_en": "Character – Demo",
+"demos.commercial_en": "Commercial – Demo",
+"demos.narration_en": "Narration – Demo",
+"demos.character_da": "Danish - Demo",
 
     "about.title": "About me",
     "about.p1": "My name is Malik Nielsen, and I work as a voice actor in both English and Danish. I provide voices for a range of characters and other types of projects.",
@@ -79,10 +79,10 @@ const translations = {
     "hero.cta2": "Andre projekter",
 
     "demos.title": "Demoer",
-    "demos.character": "Karakter – Demo",
-    "demos.commercial": "Reklame – Demo",
-    "demos.videogame": "Videospil – Demo",
-    "demos.danish": "Dansk – Demo",
+"demos.character_en": "Karakter – Engelsk Demo",
+"demos.commercial_en": "Reklame – Engelsk Demo",
+"demos.narration_en": "Narration – Engelsk Demo",
+"demos.character_da": "Dansk - Demo",
 
     "about.title": "Om mig",
     "about.p1": "Jeg hedder Malik Nielsen og arbejder som stemmeskuespiller på både dansk og engelsk. Jeg lægger stemme til forskellige karakterer samt andre typer projekter.",
