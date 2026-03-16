@@ -325,20 +325,22 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!src) return;
 
         // Toggle play/pause if same bar
-        if (currentBar === bar) {
-          if (player.paused) {
-            try {
-              await player.play();
-              setBarState(bar, true);
-            } catch (_) {
-              setBarState(bar, false);
-            }
-          } else {
-            player.pause();
-            setBarState(bar, false);
-          }
-          return;
-        }
+if (currentBar === bar) {
+  if (!player.paused) {
+    player.pause();
+    player.currentTime = 0;
+    setBarState(bar, false);
+  } else {
+    player.currentTime = 0;
+    try {
+      await player.play();
+      setBarState(bar, true);
+    } catch (_) {
+      setBarState(bar, false);
+    }
+  }
+  return;
+}
 
         // Play new demo
         stopCurrent();
