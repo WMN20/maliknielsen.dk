@@ -45,7 +45,7 @@ const translations = {
     "equip.mic.label": "Microphone",
     "equip.mic.value": "Shure SM7dB / AKG Pro Audio C214",
     "equip.iface.label": "Interface",
-    "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
+    "equip.iface.value": "Focusrite Scarlett Solo / Apollo Twin X",
     "equip.daw.label": "Digital Audio Workspace",
     "equip.daw.value": "Audacity / REAPER",
 
@@ -109,7 +109,7 @@ const translations = {
     "equip.mic.label": "Mikrofon",
     "equip.mic.value": "Shure SM7dB / AKG Pro Audio C214",
     "equip.iface.label": "Interface",
-    "equip.iface.value": "Focusrite Scarlett Solo (4th Gen)",
+    "equip.iface.value": "Focusrite Scarlett Solo / Apollo Twin X",
     "equip.daw.label": "Digital Audio Workspace",
     "equip.daw.value": "Audacity / REAPER",
 
