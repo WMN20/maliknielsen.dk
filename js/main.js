@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       type: "fandub",
-      title_en: "Final Fantasy XV Fandub – Ardyn Reveals His True Self",
-      title_dk: "Final Fantasy XV Fandub – Ardyn Reveals His True Self",
+      title_en: "Portal 2 GlaDOS Awakens scene",
+      title_dk: "Portal 2 GlaDOS Awakens scene",
       url: "https://www.youtube.com/watch?v=FFZSa03TBag"
     },
     {
       type: "fandub",
-      title_en: "Portal 2 GlaDOS Awakens scene",
-      title_dk: "Portal 2 GlaDOS Awakens scene",
+      title_en: "Final Fantasy XV Fandub – Ardyn Reveals His True Self",
+      title_dk: "Final Fantasy XV Fandub – Ardyn Reveals His True Self",
       url: "https://www.youtube.com/watch?v=SVtQwiDIwMA"
     },
     {
