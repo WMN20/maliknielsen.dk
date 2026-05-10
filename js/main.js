@@ -36,7 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
       title_dk: "“In The Dark Of The Night” (Cover) – Anastasia",
       url: "https://www.youtube.com/watch?v=_gv5U__9JGU"
     },
-
+    {
+      type: "cover",
+      title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
+      title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
+      url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+    },
   ];
 
   // ------------------------
