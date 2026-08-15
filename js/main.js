@@ -33,6 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
       title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
     },
+     {
+      type: "cover",
+      title_en: "“Friend like me” (Cover) – Aladdin",
+      title_dk: "“Friend like me” (Cover) – Aladdin",
+      url: "https://www.youtube.com/watch?v=5Vk3CVfA2Ic"
+    },
   ];
 
   // ------------------------
