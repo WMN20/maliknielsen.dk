@@ -2,23 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const VOICE_CATALOG = [
     // FANDUBS
     {
-      type: "fandub",
-      title_en: "Undertale Dub – Omega Flowey Boss Fight",
-      title_dk: "Undertale Dub – Omega Flowey Boss Fight",
-      url: "https://www.youtube.com/watch?v=GRsfJYKtVrs"
-    },
-    {
-      type: "fandub",
-      title_en: "Portal 2 GlaDOS Awakens scene",
-      title_dk: "Portal 2 GlaDOS Awakens scene",
-      url: "https://www.youtube.com/watch?v=FFZSa03TBag"
-    },
-    {
-      type: "fandub",
-      title_en: "Batman Arkham Knight – Scarecrow Fandub",
-      title_dk: "Batman Arkham Knight – Scarecrow Fandub",
-      url: "https://www.youtube.com/watch?v=4qcWle20Aw8"
-    },
+  type: "fandub",
+  title_en: "Undertale Dub – Omega Flowey Boss Fight",
+  title_dk: "Undertale Dub – Omega Flowey Boss Fight",
+  url: "https://www.youtube.com/watch?v=GRsfJYKtVrs"
+},
+{
+  type: "fandub",
+  title_en: "Portal 2 GlaDOS Awakens scene",
+  title_dk: "Portal 2 GlaDOS Awakens scene",
+  url: "https://www.youtube.com/watch?v=FFZSa03TBag"
+},
+{
+  type: "fandub",
+  title_en: "Batman Arkham Knight – Scarecrow Fandub",
+  title_dk: "Batman Arkham Knight – Scarecrow Fandub",
+  url: "https://www.youtube.com/watch?v=4qcWle20Aw8"
+},
 
     // COVERS
     {
@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
       title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+    },    
+    {
+      type: "cover",
+      title_en: "“I'll make a man out of you” – Mulan Cover",
+      title_dk: "“I'll make a man out of you” – Mulan Cover",
+      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
     },
      {
       type: "cover",
@@ -63,9 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function getYouTubeThumb(videoId) {
-    return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-  }
+function getYouTubeThumb(videoId) {
+  return `<a href="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;" ...
+}
+}
 
   // ------------------------
   // "My Voice" Collapsible state
