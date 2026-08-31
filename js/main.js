@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const VOICE_CATALOG = [
 
-
---------------------------------------------------------------------------
     
     // FANDUBS
     {
@@ -27,23 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // COVERS
     {
       type: "cover",
-      title_en: "“In The Dark Of The Night” (Anastasia) - COVER",
-      title_dk: "“In The Dark Of The Night” (Anastasia) - COVER",
+      title_en: "In The Dark Of The Night - Anastasia",
+      title_dk: "In The Dark Of The Night - Anastasia",
       url: "https://www.youtube.com/watch?v=_gv5U__9JGU"
+    },
+ {
+      type: "cover",
+      title_en: "I'll make a man out of you - Mulan",
+      title_dk: "I'll make a man out of you - Mulan",
+      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
     },
     {
       type: "cover",
-      title_en: ""I'll Make a Man Out of You" (Mulan) - COVER",
-      title_dk: ""I'll Make a Man Out of You" (Mulan) - COVER,
-      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
-    },
-     {
-      type: "cover",
-      title_en: "“Friend like me” (Aladdin) - COVER",
-      title_dk: "“Friend like me” (Aladdin)" - COVER",
+      title_en: "Friend like me - Aladdin",
+      title_dk: "Friend like me - Aladdin",
       url: "https://www.youtube.com/watch?v=5Vk3CVfA2Ic"
     },
-  ];
+
 
 --------------------------------------------------------------------------
 
