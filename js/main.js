@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const VOICE_CATALOG = [
-
     
     // FANDUBS
     {
@@ -41,10 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
       title_dk: "Friend like me - Aladdin",
       url: "https://www.youtube.com/watch?v=5Vk3CVfA2Ic"
     },
-
-
---------------------------------------------------------------------------
-
   
   // ------------------------
   // Helpers
