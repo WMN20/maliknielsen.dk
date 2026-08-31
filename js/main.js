@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const VOICE_CATALOG = [
+
+
+--------------------------------------------------------------------------
+    
     // FANDUBS
     {
       type: "fandub",
@@ -23,24 +27,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // COVERS
     {
       type: "cover",
-      title_en: "“In The Dark Of The Night” (Cover) – Anastasia",
-      title_dk: "“In The Dark Of The Night” (Cover) – Anastasia",
+      title_en: "“In The Dark Of The Night” (Anastasia) - COVER",
+      title_dk: "“In The Dark Of The Night” (Anastasia) - COVER",
       url: "https://www.youtube.com/watch?v=_gv5U__9JGU"
     },
     {
       type: "cover",
-      title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
-      title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
-      url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+      title_en: ""I'll Make a Man Out of You" (Mulan) - COVER",
+      title_dk: ""I'll Make a Man Out of You" (Mulan) - COVER,
+      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
     },
      {
       type: "cover",
-      title_en: "“Friend like me” (Cover) – Aladdin",
-      title_dk: "“Friend like me” (Cover) – Aladdin",
+      title_en: "“Friend like me” (Aladdin) - COVER",
+      title_dk: "“Friend like me” (Aladdin)" - COVER",
       url: "https://www.youtube.com/watch?v=5Vk3CVfA2Ic"
     },
   ];
 
+--------------------------------------------------------------------------
+
+  
   // ------------------------
   // Helpers
   // ------------------------
