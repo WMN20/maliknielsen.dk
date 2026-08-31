@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
       title_en: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       title_dk: "“Oogie Boogie’s Song” (Cover) – The Nightmare Before Christmas",
       url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+       },
+     
+    {
+      type: "cover",
+      title_en: "“I'll Make a Man Out of You” – Mulan Cover",
+      title_dk: "“I'll Make a Man Out of You” – Mulan Cover",
+      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
+    },
+      
+    
     },
      {
       type: "cover",
