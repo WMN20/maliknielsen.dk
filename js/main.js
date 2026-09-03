@@ -3,20 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // FANDUBS
     {
       type: "fandub",
-      title_en: "Undertale Dub – Omega Flowey Boss Fight",
-      title_dk: "Undertale Dub – Omega Flowey Boss Fight",
+      title_en: "Omega Flowey Boss Fight - Undertale Dub",
+      title_dk: "Omega Flowey Boss Fight - Undertale Dub",
       url: "https://www.youtube.com/watch?v=GRsfJYKtVrs"
     },
     {
       type: "fandub",
-      title_en: "Portal 2 GlaDOS Awakens scene",
-      title_dk: "Portal 2 GlaDOS Awakens scene",
+      title_en: "GlaDOS Awakens scene - Portal 2",
+      title_dk: "GlaDOS Awakens scene - Portal 2",
       url: "https://www.youtube.com/watch?v=FFZSa03TBag"
     },
     {
       type: "fandub",
-      title_en: "Batman Arkham Knight – Scarecrow Fandub",
-      title_dk: "Batman Arkham Knight – Scarecrow Fandub",
+      title_en: "Scarecrow Fandub - Batman: Arkham Knight",
+      title_dk: "Scarecrow Fandub - Batman: Arkham Knight",
       url: "https://www.youtube.com/watch?v=4qcWle20Aw8"
     },
 
