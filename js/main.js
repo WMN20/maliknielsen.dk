@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "cover",
       title_en: "“I'll make a man out of you” (Cover) – Mulan",
       title_dk: "“I'll make a man out of you” (Cover) – Mulan",
-      url: "https://www.youtube.com/watch?v=Qggp_cHXwvo"
+      url: "https://www.youtube.com/watch?v=AywGkesMAJg"
     },
      {
       type: "cover",
