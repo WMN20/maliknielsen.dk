@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // FANDUBS
     {
       type: "fandub",
-      title_en: "Omega Flowey Boss Fight - Undertale Dub",
-      title_dk: "Omega Flowey Boss Fight - Undertale Dub",
+      title_en: "Omega Flowey Boss Fight - Undertale",
+      title_dk: "Omega Flowey Boss Fight - Undertale",
       url: "https://www.youtube.com/watch?v=GRsfJYKtVrs"
     },
     {
