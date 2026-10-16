@@ -15,7 +15,7 @@ const translations = {
     "hero.cta2": "Other projects",
 
     "demos.title": "Demos",
-"demos.character_en": "Character – Demo",
+"demos.Interactive_en": "Interactive – Demo",
 "demos.commercial_en": "Commercial – Demo",
 "demos.narration_en": "Narration – Demo",
 "demos.character_da": "Danish - Demo",
@@ -79,7 +79,7 @@ const translations = {
     "hero.cta2": "Andre projekter",
 
     "demos.title": "Demoer",
-"demos.character_en": "Karakter – Engelsk Demo",
+"demos.Interactive_en": "Interaktiv – Engelsk Demo",
 "demos.commercial_en": "Reklame – Engelsk Demo",
 "demos.narration_en": "Narration – Engelsk Demo",
 "demos.character_da": "Dansk - Demo",
